@@ -13,7 +13,18 @@
             list-style-type: none;
         }
 
-        .text-wrapper {
+        .wrapper {
+            box-sizing: border-box;
+
+            width: 370px;
+            height: 404px;
+            background-color: #ffffff;
+            border: 1px solid #eeeeee;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+
+        .animate, .wrapper-text {
             position: relative;
             overflow: hidden;
         }
@@ -25,6 +36,18 @@
 
         .animate {
             position: absolute;
+            left: 0;
+            top: 0;
+            transform: translatex(100%);
+            transition: transform 300ms linear;
+        }
+
+        img:hover {
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: translatex(0);
+            transition: transform 300ms linear;
         }
     </style>
     <title>lesson 10</title>
@@ -43,101 +66,8 @@
                         quisquam, illum hic aperiam ipsam porro totam impedit, tempore facere vel placeat qui quasi
                         perferendis voluptatem?</p>
                 </div>
-            </div>
-        </li>
-        <li class="list-item">
-            <div>
-                <div class="card">
-                    <img src="https://picsum.photos/370/295" alt="">
-                    <h3></h3>
-                    <p class="animate">Velit veritatis fugiat reiciendis sit accusantium quia illum dolores odit iste,
-                        eaque repellat
-                        tempora consequuntur assumenda aliquid ipsam quae, perspiciatis adipisci? Molestias nobis porro
-                        commodi distinctio eligendi qui eos hic?</p>
-                </div>
-            </div>
-        </li>
-        <li class="list-item">
-            <div>
-                <div class="card">
-                    <img src="https://picsum.photos/370/295" alt="">
-                    <h3></h3>
-                    <p class="animate">Repellendus nam dicta vitae inventore? Commodi maiores assumenda consequatur
-                        praesentium dicta
-                        itaque officia ducimus accusantium esse quisquam voluptatibus libero beatae qui nemo ex,
-                        inventore voluptatum consectetur! Placeat minima eos velit.</p>
-                </div>
-            </div>
-        </li>
-        <li class="list-item">
-            <div>
-                <div class="card">
-                    <img src="https://picsum.photos/370/295" alt="">
-                    <h3></h3>
-                    <p class="animate">Numquam, tenetur! Quas quis ea, aut facere corrupti voluptates, ipsa hic,
-                        doloremque cumque
-                        assumenda qui maxime debitis animi perferendis sapiente? Debitis dolore rerum corporis
-                        reprehenderit omnis eius incidunt necessitatibus error!</p>
-                </div>
-            </div>
-        </li>
-        <li class="list-item">
-            <div>
-                <div class="card">
-                    <img src="https://picsum.photos/370/295" alt="">
-                    <h3></h3>
-                    <p class="animate">Beatae quasi doloremque sequi perspiciatis doloribus ex explicabo quis, atque
-                        laudantium! Libero
-                        id ab doloremque odit reiciendis in iusto, fugit tempore, quia, debitis nobis ullam similique
-                        placeat facere blanditiis quaerat!</p>
-                </div>
-            </div>
-        </li>
-        <li class="list-item">
-            <div>
-                <div class="card">
-                    <img src="" alt="">
-                    <h3></h3>
-                    <p class="animate">Iste, possimus aperiam! Nobis voluptatem expedita dolores totam ipsa! Quibusdam
-                        obcaecati enim
-                        corporis assumenda voluptates, veritatis at et, incidunt, quae ex eveniet asperiores adipisci
-                        rerum totam tenetur facilis consequatur accusantium!</p>
-                </div>
-            </div>
-        </li>
-        <li class="list-item">
-            <div>
-                <div class="card">
-                    <img src="https://picsum.photos/370/295" alt="">
-                    <h3></h3>
-                    <p class="animate">Fugiat at impedit fugit, dicta distinctio error deserunt eos inventore
-                        dignissimos sed alias
-                        veritatis, fuga architecto omnis officiis placeat? Ullam vel incidunt quibusdam tenetur,
-                        doloremque dolorem asperiores fugiat ipsa placeat!</p>
-                </div>
-            </div>
-        </li>
-        <li class="list-item">
-            <div>
-                <div class="card">
-                    <img src="https://picsum.photos/370/295" alt="">
-                    <h3></h3>
-                    <p class="animate">Suscipit est necessitatibus exercitationem molestiae accusantium doloribus ipsam
-                        error commodi
-                        obcaecati, delectus velit beatae aperiam, veniam deleniti sit hic. Vitae sed sunt voluptas
-                        aperiam ullam deserunt quae distinctio consectetur corrupti?</p>
-                </div>
-            </div>
-        </li>
-        <li class="list-item">
-            <div>
-                <div class="card">
-                    <img src="https://picsum.photos/370/295" alt="">
-                    <h3></h3>
-                    <p class="animate">Totam laborum porro accusantium reprehenderit sunt excepturi illum, placeat
-                        adipisci ea nulla
-                        necessitatibus maxime aliquam optio numquam doloremque illo soluta dolor. Ipsum culpa quasi
-                        accusantium iure voluptatum, adipisci perspiciatis consequuntur.</p>
+                <div class="wrapper">
+                    <p class="wrapper-text"></p>
                 </div>
             </div>
         </li>
